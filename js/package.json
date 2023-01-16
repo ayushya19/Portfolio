@@ -1,0 +1,29 @@
+{
+  "name": "myportfolio",
+  "version": "1.0.0",
+  "description": "first",
+  "main": "main.js",
+  "dependencies": {
+    "ar.js": "^2.2.2",
+    "require": "^2.4.20",
+    "three.js": "^0.77.1",
+    "three": "^0.148.0",
+    "threex": "^1.0.0",
+    "vr": "^0.2.0",
+    "type": "module",
+    "webxr-polyfill": "^2.0.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "npm"
+  },
+  "repository": {
+    "type": "git",
+    "url": "na"
+  },
+  "keywords": [
+    "na"
+  ],
+  "author": "ayushya",
+  "license": "UNLICENSED"
+}
