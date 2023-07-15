@@ -1,5 +1,11 @@
-# Networked-Aframe Starter Pack
+# A-Frame Project
 
-Built with [Networked-A-Frame](https://github.com/haydenjameslee/networked-aframe), a web framework for building multi-user virtual reality experiences. Works on Vive, Rift, desktop, mobile platforms.
+**[Subscribe to the A-Frame newsletter!](https://aframe.io/subscribe/)**
 
-Click and drag on desktop. Open it on a smartphone and use the device motion sensors. Or [plug in a VR headset](https://webvr.rocks)!
+**[Sponsor us to help support A-Frame development and its community](https://github.com/sponsors/dmarcos)**
+
+Built with [A-Frame](https://aframe.io), a web framework for building virtual reality experiences.
+
+Make WebVR with HTML and Entity-Component. Works on Vive, Rift, Quest, desktop, mobile platforms.
+
+Click and drag on desktop. Open it on a smartphone and use the device motion sensors. Or [plug in a VR headset](https://aframe.io/docs/0.8.0/introduction/vr-headsets-and-webvr-browsers.html)!
