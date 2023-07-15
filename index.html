@@ -6,7 +6,7 @@
     <meta name="description" content="Hello, WebVR, Aframe">
     <script src="https://aframe.io/releases/1.4.2/aframe.min.js"></script>
     <script src="https://unpkg.com/aframe-look-at-component@0.8.0/dist/aframe-look-at-component.min.js"></script>
-    <script src="https://unpkg.com/aframe-layout-component@4.3.1/dist/aframe-layout-component.min.js"></script> 
+    <script src="https://unpkg.com/aframe-layout-component@4.3.1/dist/aframe-layout-component.min.js"></script>
   </head>
   <body>
     <a-scene background="color: #ECECEC">
@@ -18,10 +18,10 @@
         <img id="Project4" src="https://cdn.glitch.global/0087ca9e-c67e-4888-af53-f96f2c447351/_2cd68430-b059-4bb3-a5bb-ade66e21703d.jfif?v=1689429672758"/>
       </a-asset>
       <a-entity layout="type: circle; radius: 2" position="0 1.4 0" rotation="-90 0 0">
-      <a-image src="#Project1" look-at="#cam"></a-image>
-      <a-image src="#Project2" look-at="#cam"></a-image>
-      <a-image src="#Project3" look-at="#cam"></a-image>
-      <a-image src="#Project4" look-at="#cam"></a-image>
+        <a-image src="#Project1" look-at="camera"></a-image>
+        <a-image src="#Project2" look-at="camera"></a-image>
+        <a-image src="#Project3" look-at="camera"></a-image>
+        <a-image src="#Project4" look-at="camera"></a-image>
       </a-entity>
       <a-camera id="cam"></a-camera>
     </a-scene>
