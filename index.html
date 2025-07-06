@@ -1,58 +1,133 @@
 <!DOCTYPE html>
 <html>
-  
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title>Hello Folks, I am Ayushya</title>
-    <meta name="description" content="Hello, WebVR, Aframe">
+    <meta name="description" content="Hello, WebVR, Aframe" />
     <script src="https://aframe.io/releases/1.4.2/aframe.min.js"></script>
     <script src="https://unpkg.com/aframe-look-at-component@0.8.0/dist/aframe-look-at-component.min.js"></script>
     <script src="https://unpkg.com/aframe-layout-component@4.3.1/dist/aframe-layout-component.min.js"></script>
   </head>
-  
+
   <body>
     <a-scene background="color: #ECECEC">
       <a-asset>
-        <img id="PortfolioMain" src="https://cdn.glitch.global/0087ca9e-c67e-4888-af53-f96f2c447351/171197_A%20robot%20interacting%20with%20a%20device%20whose%20display%20is_esrgan-v1-x2plus.png?v=1689429678394" crossorigin="anonymous"/>
-        <img id="Project1" src="https://cdn.glitch.global/0087ca9e-c67e-4888-af53-f96f2c447351/Metahuman.jfif?v=1689429679423" crossorigin="anonymous"/>
-        <img id="Project2" src="https://cdn.glitch.global/0087ca9e-c67e-4888-af53-f96f2c447351/SportsRecreation.jfif?v=1689429683896" crossorigin="anonymous"/>
-        <img id="Project3" src="https://cdn.glitch.global/0087ca9e-c67e-4888-af53-f96f2c447351/_51661375-f585-477e-964f-5dca2d0b1e92.jfif?v=1689429674741" crossorigin="anonymous"/>
-        <img id="Project4" src="https://cdn.glitch.global/0087ca9e-c67e-4888-af53-f96f2c447351/_2cd68430-b059-4bb3-a5bb-ade66e21703d.jfif?v=1689429672758" crossorigin="anonymous"/>
-        <img id="sky" src="https://cdn.glitch.global/0087ca9e-c67e-4888-af53-f96f2c447351/tech_noir__cyberpunk_extremely_darkneon_red_real.jpg?v=1689442365722" crossorigin="anonymous"/>
+        <img
+          id="PortfolioMain"
+          src="https://cdn.glitch.global/0087ca9e-c67e-4888-af53-f96f2c447351/171197_A%20robot%20interacting%20with%20a%20device%20whose%20display%20is_esrgan-v1-x2plus.png?v=1689429678394"
+          crossorigin="anonymous"
+        />
+        <img
+          id="Project1"
+          src="https://cdn.glitch.global/0087ca9e-c67e-4888-af53-f96f2c447351/Metahuman.jfif?v=1689429679423"
+          crossorigin="anonymous"
+        />
+        <img
+          id="Project2"
+          src="https://cdn.glitch.global/0087ca9e-c67e-4888-af53-f96f2c447351/SportsRecreation.jfif?v=1689429683896"
+          crossorigin="anonymous"
+        />
+        <img
+          id="Project3"
+          src="https://cdn.glitch.global/0087ca9e-c67e-4888-af53-f96f2c447351/_51661375-f585-477e-964f-5dca2d0b1e92.jfif?v=1689429674741"
+          crossorigin="anonymous"
+        />
+        <img
+          id="Project4"
+          src="https://cdn.glitch.global/0087ca9e-c67e-4888-af53-f96f2c447351/_2cd68430-b059-4bb3-a5bb-ade66e21703d.jfif?v=1689429672758"
+          crossorigin="anonymous"
+        />
+        <img
+          id="sky"
+          src="https://cdn.glitch.global/0087ca9e-c67e-4888-af53-f96f2c447351/tech_noir__cyberpunk_extremely_darkneon_red_real.jpg?v=1689442365722"
+          crossorigin="anonymous"
+        />
+        <img
+          id="Logo"
+          src="https://cdn.glitch.global/0087ca9e-c67e-4888-af53-f96f2c447351/PersonalLogoPic.png?v=1751761764658"
+          alt="Logo"
+        />
+        <img
+          id="Blogs"
+          src="https://cdn.glitch.global/0087ca9e-c67e-4888-af53-f96f2c447351/Blogs.png?v=1751761763218"
+          alt="Blogs"
+        />
       </a-asset>
-      
-      <a-entity layout="type: circle; radius: 2" position="0 1.4 0" rotation="120 0 0">
-        
-        
-        
+
+      <a-entity
+        layout="type: circle; radius: 2"
+        position="0 1.4 0"
+        rotation="120 0 0"
+      >
         <a-entity look-at="#cam">
-          <a-text value="Speaking Metahuman" align="center" baseline="bottom" anchor="center" position="0 0.6 0.1"/>
+          <a-text
+            value="Speaking Metahuman"
+            align="center"
+            baseline="bottom"
+            anchor="center"
+            position="0 0.6 0.1"
+          />
           <a-image src="#Project1"></a-image>
         </a-entity>
-        
+
         <a-entity look-at="#cam">
-          <a-text value="Sports Recreation" align="center" baseline="bottom" anchor="center" position="0 0.6 0.1"/>
+          <a-text
+            value="Sports Recreation"
+            align="center"
+            baseline="bottom"
+            anchor="center"
+            position="0 0.6 0.1"
+          />
           <a-image src="#Project2"></a-image>
         </a-entity>
-        
+
         <a-entity look-at="#cam">
-          <a-text value="VR Substation Training" align="center" baseline="bottom" anchor="center" position="0 0.6 0.1"/>
+          <a-text
+            value="VR Substation Training"
+            align="center"
+            baseline="bottom"
+            anchor="center"
+            position="0 0.6 0.1"
+          />
           <a-image src="#Project3"></a-image>
         </a-entity>
-        
+
         <a-entity look-at="#cam">
-          <a-text value="VR Bank" align="center" baseline="bottom" anchor="center" position="0 0.6 0.1"/>
+          <a-text
+            value="VR Bank"
+            align="center"
+            baseline="bottom"
+            anchor="center"
+            position="0 0.6 0.1"
+          />
           <a-image src="#Project4"></a-image>
         </a-entity>
-        
+
         <a-entity look-at="#cam">
-          <a-text value="HI,I am Ayushya" align="center" baseline="bottom" anchor="center" position="0 0 0.1" color="black"/>
-          <a-image src="#PortfolioMain"></a-image>
+          <a-text
+            value="asd"
+            align="center"
+            baseline="bottom"
+            anchor="center"
+            position="0 0.6 0.1"
+            color="black"
+          />
+          <a-image src="#Logo"></a-image>
         </a-entity>
-        
-        
+
+        <a-entity look-at="#cam">
+          <a-text
+            value="asfasf"
+            align="center"
+            baseline="bottom"
+            anchor="center"
+            position="0 0.6 0.1"
+            color="black"
+          />
+          <a-image src="#Blogs"></a-image>
+        </a-entity>
       </a-entity>
-        <a-sky src="#sky"></a-sky>
+      <a-sky src="#sky"></a-sky>
       <a-camera id="cam"></a-camera>
     </a-scene>
   </body>
