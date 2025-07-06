@@ -1,70 +1,145 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ayushya's VR Blog Environment</title>
-    <meta name="description" content="3D VR Blog Environment" />
     <script src="https://aframe.io/releases/1.4.2/aframe.min.js"></script>
     <script src="https://unpkg.com/aframe-look-at-component@0.8.0/dist/aframe-look-at-component.min.js"></script>
     <script src="https://unpkg.com/aframe-link-component@0.1.0/dist/aframe-link-component.min.js"></script>
     <script src="https://unpkg.com/aframe-hover-component@0.1.0/dist/aframe-hover-component.min.js"></script>
-  </head>
+</head>
+<body>
+    <a-scene background="color: #f0f0f0">
+        <a-asset>
+            <!-- 360 Video Background - Replace with your 360 video URL -->
+            <video id="background360" src="https://cdn.glitch.global/0087ca9e-c67e-4888-af53-f96f2c447351/ezgif-5df40605cc8c41.gif?v=1751765069699" autoplay loop="true" crossorigin="anonymous"></video>
+            
+            <!-- Blog Subject Images -->
+            <img id="metahuman" src="https://cdn.glitch.global/0087ca9e-c67e-4888-af53-f96f2c447351/Metahuman.jfif?v=1689429679423" crossorigin="anonymous"/>
+            <img id="sports" src="https://cdn.glitch.global/0087ca9e-c67e-4888-af53-f96f2c447351/SportsRecreation.jfif?v=1689429683896" crossorigin="anonymous"/>
+            <img id="vr-training" src="https://cdn.glitch.global/0087ca9e-c67e-4888-af53-f96f2c447351/_51661375-f585-477e-964f-5dca2d0b1e92.jfif?v=1689429674741" crossorigin="anonymous"/>
+            <img id="vr-bank" src="https://cdn.glitch.global/0087ca9e-c67e-4888-af53-f96f2c447351/_2cd68430-b059-4bb3-a5bb-ade66e21703d.jfif?v=1689429672758" crossorigin="anonymous"/>
+            <img id="webvr" src="https://cdn.glitch.global/0087ca9e-c67e-4888-af53-f96f2c447351/171197_A%20robot%20interacting%20with%20a%20device%20whose%20display%20is_esrgan-v1-x2plus.png?v=1689429678394" crossorigin="anonymous"/>
+            <img id="ai-vr" src="https://cdn.glitch.global/0087ca9e-c67e-4888-af53-f96f2c447351/PersonalLogoPic.jpg?v=1751762371257" crossorigin="anonymous"/>
+        </a-asset>
 
-  <body>
-    <a-scene background="color: #f0f0f0" vr-mode-ui="enabled: true">
-      <a-asset>
-        <img
-          id="PortfolioMain"
-          src="https://cdn.glitch.global/0087ca9e-c67e-4888-af53-f96f2c447351/171197_A%20robot%20interacting%20with%20a%20device%20whose%20display%20is_esrgan-v1-x2plus.png?v=1689429678394"
-          crossorigin="anonymous"
-        />
-        <img
-          id="Project1"
-          src="https://cdn.glitch.global/0087ca9e-c67e-4888-af53-f96f2c447351/Metahuman.jfif?v=1689429679423"
-          crossorigin="anonymous"
-        />
-        <img
-          id="Project2"
-          src="https://cdn.glitch.global/0087ca9e-c67e-4888-af53-f96f2c447351/SportsRecreation.jfif?v=1689429683896"
-          crossorigin="anonymous"
-        />
-        <img
-          id="Project3"
-          src="https://cdn.glitch.global/0087ca9e-c67e-4888-af53-f96f2c447351/_51661375-f585-477e-964f-5dca2d0b1e92.jfif?v=1689429674741"
-          crossorigin="anonymous"
-        />
-        <img
-          id="Project4"
-          src="https://cdn.glitch.global/0087ca9e-c67e-4888-af53-f96f2c447351/_2cd68430-b059-4bb3-a5bb-ade66e21703d.jfif?v=1689429672758"
-          crossorigin="anonymous"
-        />
-        <img
-          id="Logo"
-          src="https://cdn.glitch.global/0087ca9e-c67e-4888-af53-f96f2c447351/Blogs.jpg?v=1751762409044"
-          alt="Logo"
-          crossorigin="anonymous"
-        />
-        <img
-          id="Blogs"
-          src="https://cdn.glitch.global/0087ca9e-c67e-4888-af53-f96f2c447351/PersonalLogoPic.jpg?v=1751762371257"
-          alt="Blogs"
-          crossorigin="anonymous"
-        />
-      </a-asset>
+        <!-- 360 Video Background -->
+        <a-videosphere src="#background360"></a-videosphere>
 
-      <!-- Desk Surface -->
-      <a-box position="0 -0.5 0" width="8" height="0.1" depth="4" color="#8B4513" material="roughness: 0.8"></a-box>
+        <!-- Desk Surface -->
+        <a-box position="0 -0.5 0" width="8" height="0.1" depth="4" color="#8B4513" material="roughness: 0.8"></a-box>
 
-      <!-- Desk Legs -->
-      <a-box position="-3.5 -1.5 1.5" width="0.2" height="2" depth="0.2" color="#654321"></a-box>
-      <a-box position="3.5 -1.5 1.5" width="0.2" height="2" depth="0.2" color="#654321"></a-box>
-      <a-box position="-3.5 -1.5 -1.5" width="0.2" height="2" depth="0.2" color="#654321"></a-box>
-      <a-box position="3.5 -1.5 -1.5" width="0.2" height="2" depth="0.2" color="#654321"></a-box>
+        <!-- Desk Legs -->
+        <a-box position="-3.5 -1.5 1.5" width="0.2" height="2" depth="0.2" color="#654321"></a-box>
+        <a-box position="3.5 -1.5 1.5" width="0.2" height="2" depth="0.2" color="#654321"></a-box>
+        <a-box position="-3.5 -1.5 -1.5" width="0.2" height="2" depth="0.2" color="#654321"></a-box>
+        <a-box position="3.5 -1.5 -1.5" width="0.2" height="2" depth="0.2" color="#654321"></a-box>
 
-      <!-- Blog Subject 1: Building Interactive Metahumans -->
-      <a-box position="-2.5 0.1 0.5" width="0.8" height="0.1" depth="1.2" color="#8B0000" material="roughness: 0.6">
-        <a-plane position="0 0.06 0" width="0.7" height="1" color="#fff" material="shader: flat">
-          <a-text value="Building Interactive Metahumans" align="center" anchor="center" color="#000" scale="0.5 0.5 0.5"></a-text>
-        </a-plane>
-        <a-image src="#Project1" position="0 0.06 0.3" width="0.6" height="0.4"></a-image>
-        <a-text value="December 15, 2024" position="0 0.06 -0.2" align="center" anchor="center" color="#666" scale="0.4
+        <!-- Blog Subject 1: Metahumans -->
+        <a-box position="-2.5 0.1 0.5" width="0.8" height="0.1" depth="1.2" color="#8B0000" material="roughness: 0.6">
+            <a-plane position="0 0.06 0" width="0.7" height="1" color="#fff" material="shader: flat">
+                <a-text value="Building Interactive Metahumans" align="center" anchor="center" color="#000" scale="0.6 0.6 0.6"></a-text>
+            </a-plane>
+            <a-image src="#metahuman" position="0 0.06 0.3" width="0.6" height="0.4"></a-image>
+            <a-link href="#" position="0 0.06 -0.4" scale="0.3 0.3 0.3">
+                <a-plane color="#007bff" opacity="0.8" width="0.8" height="0.3">
+                    <a-text value="Read Article" align="center" anchor="center" color="white" scale="0.7 0.7 0.7"></a-text>
+                </a-plane>
+            </a-link>
+        </a-box>
+
+        <!-- Blog Subject 2: Sports VR -->
+        <a-box position="-1.5 0.1 0.5" width="0.8" height="0.1" depth="1.2" color="#006400" material="roughness: 0.6">
+            <a-plane position="0 0.06 0" width="0.7" height="1" color="#fff" material="shader: flat">
+                <a-text value="VR in Sports and Recreation" align="center" anchor="center" color="#000" scale="0.6 0.6 0.6"></a-text>
+            </a-plane>
+            <a-image src="#sports" position="0 0.06 0.3" width="0.6" height="0.4"></a-image>
+            <a-link href="#" position="0 0.06 -0.4" scale="0.3 0.3 0.3">
+                <a-plane color="#007bff" opacity="0.8" width="0.8" height="0.3">
+                    <a-text value="Read Article" align="center" anchor="center" color="white" scale="0.7 0.7 0.7"></a-text>
+                </a-plane>
+            </a-link>
+        </a-box>
+
+        <!-- Blog Subject 3: VR Training -->
+        <a-box position="-0.5 0.1 0.5" width="0.8" height="0.1" depth="1.2" color="#4B0082" material="roughness: 0.6">
+            <a-plane position="0 0.06 0" width="0.7" height="1" color="#fff" material="shader: flat">
+                <a-text value="Training Simulations in VR" align="center" anchor="center" color="#000" scale="0.6 0.6 0.6"></a-text>
+            </a-plane>
+            <a-image src="#vr-training" position="0 0.06 0.3" width="0.6" height="0.4"></a-image>
+            <a-link href="#" position="0 0.06 -0.4" scale="0.3 0.3 0.3">
+                <a-plane color="#007bff" opacity="0.8" width="0.8" height="0.3">
+                    <a-text value="Read Article" align="center" anchor="center" color="white" scale="0.7 0.7 0.7"></a-text>
+                </a-plane>
+            </a-link>
+        </a-box>
+
+        <!-- Blog Subject 4: VR Banking -->
+        <a-box position="0.5 0.1 0.5" width="0.8" height="0.1" depth="1.2" color="#FF8C00" material="roughness: 0.6">
+            <a-plane position="0 0.06 0" width="0.7" height="1" color="#fff" material="shader: flat">
+                <a-text value="Virtual Banking Experiences" align="center" anchor="center" color="#000" scale="0.6 0.6 0.6"></a-text>
+            </a-plane>
+            <a-image src="#vr-bank" position="0 0.06 0.3" width="0.6" height="0.4"></a-image>
+            <a-link href="#" position="0 0.06 -0.4" scale="0.3 0.3 0.3">
+                <a-plane color="#007bff" opacity="0.8" width="0.8" height="0.3">
+                    <a-text value="Read Article" align="center" anchor="center" color="white" scale="0.7 0.7 0.7"></a-text>
+                </a-plane>
+            </a-link>
+        </a-box>
+
+        <!-- Blog Subject 5: WebVR -->
+        <a-box position="1.5 0.1 0.5" width="0.8" height="0.1" depth="1.2" color="#4169E1" material="roughness: 0.6">
+            <a-plane position="0 0.06 0" width="0.7" height="1" color="#fff" material="shader: flat">
+                <a-text value="The Future of WebVR" align="center" anchor="center" color="#000" scale="0.6 0.6 0.6"></a-text>
+            </a-plane>
+            <a-image src="#webvr" position="0 0.06 0.3" width="0.6" height="0.4"></a-image>
+            <a-link href="#" position="0 0.06 -0.4" scale="0.3 0.3 0.3">
+                <a-plane color="#007bff" opacity="0.8" width="0.8" height="0.3">
+                    <a-text value="Read Article" align="center" anchor="center" color="white" scale="0.7 0.7 0.7"></a-text>
+                </a-plane>
+            </a-link>
+        </a-box>
+
+        <!-- Blog Subject 6: AI & VR -->
+        <a-box position="2.5 0.1 0.5" width="0.8" height="0.1" depth="1.2" color="#32CD32" material="roughness: 0.6">
+            <a-plane position="0 0.06 0" width="0.7" height="1" color="#fff" material="shader: flat">
+                <a-text value="AI and VR Integration" align="center" anchor="center" color="#000" scale="0.6 0.6 0.6"></a-text>
+            </a-plane>
+            <a-image src="#ai-vr" position="0 0.06 0.3" width="0.6" height="0.4"></a-image>
+            <a-link href="#" position="0 0.06 -0.4" scale="0.3 0.3 0.3">
+                <a-plane color="#007bff" opacity="0.8" width="0.8" height="0.3">
+                    <a-text value="Read Article" align="center" anchor="center" color="white" scale="0.7 0.7 0.7"></a-text>
+                </a-plane>
+            </a-link>
+        </a-box>
+
+        <!-- Decorative Elements -->
+        <a-cylinder position="2 0.1 -1" radius="0.15" height="0.3" color="#fff" material="roughness: 0.3">
+            <a-cylinder position="0 0.2 0.1" radius="0.05" height="0.1" color="#fff" rotation="0 0 45"></a-cylinder>
+        </a-cylinder>
+
+        <a-cylinder position="-2 0.1 -1" radius="0.1" height="0.2" color="#8B4513"></a-cylinder>
+        <a-cylinder position="-2 0.2 -1" radius="0.02" height="0.3" color="#FFD700" rotation="0 0 15"></a-cylinder>
+        <a-cylinder position="-2 0.2 -1" radius="0.02" height="0.3" color="#FF0000" rotation="0 0 -15"></a-cylinder>
+
+        <!-- Welcome Sign -->
+        <a-text value="Ayushya's VR Blog Environment" position="0 1.5 -3" align="center" anchor="center" color="#333" scale="1.5 1.5 1.5"></a-text>
+        <a-text value="Click on the subjects to read articles" position="0 1.2 -3" align="center" anchor="center" color="#666" scale="0.8 0.8 0.8"></a-text>
+
+        <!-- Back to Portfolio Button -->
+        <a-link href="index.html" position="0 1.8 -3" scale="0.5 0.5 0.5">
+            <a-plane color="#dc3545" opacity="0.9" width="2" height="0.5">
+                <a-text value="← Back to Portfolio" align="center" anchor="center" color="white" scale="1.2 1.2 1.2"></a-text>
+            </a-plane>
+        </a-link>
+
+        <!-- Lighting -->
+        <a-light type="ambient" color="#ffffff" intensity="0.6"></a-light>
+        <a-light type="directional" position="0 5 5" color="#ffffff" intensity="0.8"></a-light>
+
+        <!-- Camera -->
+        <a-camera id="cam" position="0 1.6 3" look-controls="reverseMouseDrag: true"></a-camera>
+    </a-scene>
+</body>
+</html> 
