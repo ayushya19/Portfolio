@@ -13,7 +13,7 @@
     <a-scene background="color: #f0f0f0">
         <a-asset>
             <!-- 360 Image Background - Replace with your 360 image URL -->
-            <img id="background360" src="https://cdn.glitch.global/0087ca9e-c67e-4888-af53-f96f2c447351/tech_noir__cyberpunk_extremely_darkneon_red_real.jpg?v=1689442365722" crossorigin="anonymous"/>
+            <img id="background360" src="https://cdn.glitch.global/0087ca9e-c67e-4888-af53-f96f2c447351/746cbb52-ff9e-41f5-aa82-d2061e9e7820.png?v=1751766110362" crossorigin="anonymous"/>
             
             <!-- Alternative: If you want animated background, use a 360 video -->
             <!-- <video id="background360video" src="YOUR_360_VIDEO_URL.mp4" autoplay loop="true" crossorigin="anonymous"></video> -->
@@ -33,98 +33,68 @@
         <!-- Alternative: 360 Video Background (Animated) - Uncomment if you have a 360 video -->
         <!-- <a-videosphere src="#background360video"></a-videosphere> -->
 
-        <!-- Bookshelf 1: Metahumans -->
-        <a-box position="-2 0.5 0" width="0.8" height="1.5" depth="0.6" color="#8B4513" material="roughness: 0.7">
-            <a-box position="0 0.2 0" width="0.7" height="0.05" depth="0.5" color="#654321"></a-box>
-            <a-box position="0 0.8 0" width="0.7" height="0.05" depth="0.5" color="#654321"></a-box>
-            <a-box position="0 1.4 0" width="0.7" height="0.05" depth="0.5" color="#654321"></a-box>
-            
-            <!-- Books in Bookshelf 1 -->
-            <a-box position="0 0.5 0.1" width="0.3" height="0.6" depth="0.4" color="#8B0000" material="roughness: 0.6">
-                <a-text value="Metahumans" align="center" anchor="center" position="0 0 0.21" color="#fff" scale="0.25 0.25 0.25"></a-text>
-                <a-link href="#" position="0 0 0.25" scale="0.15 0.15 0.15">
-                    <a-plane color="#007bff" opacity="0.8" width="0.8" height="0.3">
-                        <a-text value="Read" align="center" anchor="center" color="white" scale="0.8 0.8 0.8"></a-text>
-                    </a-plane>
-                </a-link>
-            </a-box>
+        <!-- Book 1: XR -->
+        <a-box position="-2 1 0" width="0.3" height="0.8" depth="0.5" color="#2C3E50" material="roughness: 0.8; metalness: 0.1">
+            <a-text value="XR" align="center" anchor="center" position="0 0 0.26" color="#ECF0F1" scale="0.4 0.4 0.4"></a-text>
+            <a-link href="#" position="0 0 0.3" scale="0.2 0.2 0.2">
+                <a-plane color="#3498DB" opacity="0.9" width="0.8" height="0.3">
+                    <a-text value="Read" align="center" anchor="center" color="white" scale="0.8 0.8 0.8"></a-text>
+                </a-plane>
+            </a-link>
         </a-box>
+        <a-text value="Extended Reality" position="-2 1 0" align="center" anchor="center" color="#ECF0F1" scale="0.6 0.6 0.6"></a-text>
 
-        <!-- Bookshelf 2: Sports VR -->
-        <a-box position="-1 0.5 0" width="0.8" height="1.5" depth="0.6" color="#8B4513" material="roughness: 0.7">
-            <a-box position="0 0.2 0" width="0.7" height="0.05" depth="0.5" color="#654321"></a-box>
-            <a-box position="0 0.8 0" width="0.7" height="0.05" depth="0.5" color="#654321"></a-box>
-            <a-box position="0 1.4 0" width="0.7" height="0.05" depth="0.5" color="#654321"></a-box>
-            
-            <!-- Books in Bookshelf 2 -->
-            <a-box position="0 0.5 0.1" width="0.3" height="0.6" depth="0.4" color="#006400" material="roughness: 0.6">
-                <a-text value="Sports VR" align="center" anchor="center" position="0 0 0.21" color="#fff" scale="0.25 0.25 0.25"></a-text>
-                <a-link href="#" position="0 0 0.25" scale="0.15 0.15 0.15">
-                    <a-plane color="#007bff" opacity="0.8" width="0.8" height="0.3">
-                        <a-text value="Read" align="center" anchor="center" color="white" scale="0.8 0.8 0.8"></a-text>
-                    </a-plane>
-                </a-link>
-            </a-box>
+        <!-- Book 2: BCI -->
+        <a-box position="-1 0.5 0" width="0.3" height="0.8" depth="0.5" color="#27AE60" material="roughness: 0.8; metalness: 0.1">
+            <a-text value="BCI" align="center" anchor="center" position="0 0 0.26" color="#ECF0F1" scale="0.4 0.4 0.4"></a-text>
+            <a-link href="#" position="0 0 0.3" scale="0.2 0.2 0.2">
+                <a-plane color="#3498DB" opacity="0.9" width="0.8" height="0.3">
+                    <a-text value="Read" align="center" anchor="center" color="white" scale="0.8 0.8 0.8"></a-text>
+                </a-plane>
+            </a-link>
         </a-box>
+        <a-text value="Brain-Computer Interface" position="-1 1.5 0" align="center" anchor="center" color="#ECF0F1" scale="0.5 0.5 0.5"></a-text>
 
-        <!-- Bookshelf 3: VR Training -->
-        <a-box position="0 0.5 0" width="0.8" height="1.5" depth="0.6" color="#8B4513" material="roughness: 0.7">
-            <a-box position="0 0.2 0" width="0.7" height="0.05" depth="0.5" color="#654321"></a-box>
-            <a-box position="0 0.8 0" width="0.7" height="0.05" depth="0.5" color="#654321"></a-box>
-            <a-box position="0 1.4 0" width="0.7" height="0.05" depth="0.5" color="#654321"></a-box>
-            
-            <!-- Books in Bookshelf 3 -->
-            <a-box position="0 0.5 0.1" width="0.3" height="0.6" depth="0.4" color="#4B0082" material="roughness: 0.6">
-                <a-text value="VR Training" align="center" anchor="center" position="0 0 0.21" color="#fff" scale="0.25 0.25 0.25"></a-text>
-                <a-link href="#" position="0 0 0.25" scale="0.15 0.15 0.15">
-                    <a-plane color="#007bff" opacity="0.8" width="0.8" height="0.3">
-                        <a-text value="Read" align="center" anchor="center" color="white" scale="0.8 0.8 0.8"></a-text>
-                    </a-plane>
-                </a-link>
-            </a-box>
+        <!-- Book 3: Philosophy -->
+        <a-box position="0 0.5 0" width="0.3" height="0.8" depth="0.5" color="#8E44AD" material="roughness: 0.8; metalness: 0.1">
+            <a-text value="Philosophy" align="center" anchor="center" position="0 0 0.26" color="#ECF0F1" scale="0.3 0.3 0.3"></a-text>
+            <a-link href="#" position="0 0 0.3" scale="0.2 0.2 0.2">
+                <a-plane color="#3498DB" opacity="0.9" width="0.8" height="0.3">
+                    <a-text value="Read" align="center" anchor="center" color="white" scale="0.8 0.8 0.8"></a-text>
+                </a-plane>
+            </a-link>
         </a-box>
+        <a-text value="Philosophical Concepts" position="0 1 0" align="center" anchor="center" color="#ECF0F1" scale="0.5 0.5 0.5"></a-text>
 
-        <!-- Bookshelf 4: VR Banking -->
-        <a-box position="1 0.5 0" width="0.8" height="1.5" depth="0.6" color="#8B4513" material="roughness: 0.7">
-            <a-box position="0 0.2 0" width="0.7" height="0.05" depth="0.5" color="#654321"></a-box>
-            <a-box position="0 0.8 0" width="0.7" height="0.05" depth="0.5" color="#654321"></a-box>
-            <a-box position="0 1.4 0" width="0.7" height="0.05" depth="0.5" color="#654321"></a-box>
-            
-            <!-- Books in Bookshelf 4 -->
-            <a-box position="0 0.5 0.1" width="0.3" height="0.6" depth="0.4" color="#FF8C00" material="roughness: 0.6">
-                <a-text value="VR Banking" align="center" anchor="center" position="0 0 0.21" color="#fff" scale="0.25 0.25 0.25"></a-text>
-                <a-link href="#" position="0 0 0.25" scale="0.15 0.15 0.15">
-                    <a-plane color="#007bff" opacity="0.8" width="0.8" height="0.3">
-                        <a-text value="Read" align="center" anchor="center" color="white" scale="0.8 0.8 0.8"></a-text>
-                    </a-plane>
-                </a-link>
-            </a-box>
+        <!-- Book 4: Theoretical Physics -->
+        <a-box position="1 0.5 0" width="0.3" height="0.8" depth="0.5" color="#E67E22" material="roughness: 0.8; metalness: 0.1">
+            <a-text value="Theoretical Physics" align="center" anchor="center" position="0 0 0.26" color="#ECF0F1" scale="0.25 0.25 0.25"></a-text>
+            <a-link href="#" position="0 0 0.3" scale="0.2 0.2 0.2">
+                <a-plane color="#3498DB" opacity="0.9" width="0.8" height="0.3">
+                    <a-text value="Read" align="center" anchor="center" color="white" scale="0.8 0.8 0.8"></a-text>
+                </a-plane>
+            </a-link>
         </a-box>
+        <a-text value="Physics Theories" position="1 1.5 0" align="center" anchor="center" color="#ECF0F1" scale="0.6 0.6 0.6"></a-text>
 
-        <!-- Bookshelf 5: WebVR -->
-        <a-box position="2 0.5 0" width="0.8" height="1.5" depth="0.6" color="#8B4513" material="roughness: 0.7">
-            <a-box position="0 0.2 0" width="0.7" height="0.05" depth="0.5" color="#654321"></a-box>
-            <a-box position="0 0.8 0" width="0.7" height="0.05" depth="0.5" color="#654321"></a-box>
-            <a-box position="0 1.4 0" width="0.7" height="0.05" depth="0.5" color="#654321"></a-box>
-            
-            <!-- Books in Bookshelf 5 -->
-            <a-box position="0 0.5 0.1" width="0.3" height="0.6" depth="0.4" color="#4169E1" material="roughness: 0.6">
-                <a-text value="WebVR" align="center" anchor="center" position="0 0 0.21" color="#fff" scale="0.25 0.25 0.25"></a-text>
-                <a-link href="#" position="0 0 0.25" scale="0.15 0.15 0.15">
-                    <a-plane color="#007bff" opacity="0.8" width="0.8" height="0.3">
-                        <a-text value="Read" align="center" anchor="center" color="white" scale="0.8 0.8 0.8"></a-text>
-                    </a-plane>
-                </a-link>
-            </a-box>
+        <!-- Book 5: Chemistry -->
+        <a-box position="2 0.5 0" width="0.3" height="0.8" depth="0.5" color="#2980B9" material="roughness: 0.8; metalness: 0.1">
+            <a-text value="Chemistry" align="center" anchor="center" position="0 0 0.26" color="#ECF0F1" scale="0.35 0.35 0.35"></a-text>
+            <a-link href="#" position="0 0 0.3" scale="0.2 0.2 0.2">
+                <a-plane color="#3498DB" opacity="0.9" width="0.8" height="0.3">
+                    <a-text value="Read" align="center" anchor="center" color="white" scale="0.8 0.8 0.8"></a-text>
+                </a-plane>
+            </a-link>
         </a-box>
+        <a-text value="Chemical Sciences" position="2 1 0" align="center" anchor="center" color="#ECF0F1" scale="0.6 0.6 0.6"></a-text>
 
         <!-- Welcome Sign -->
-        <a-text value="Ayushya's VR Blog Library" position="0 2 0" align="center" anchor="center" color="#333" scale="1.5 1.5 1.5"></a-text>
-        <a-text value="Click on the books to read articles" position="0 1.7 0" align="center" anchor="center" color="#666" scale="0.8 0.8 0.8"></a-text>
+        <a-text value="Ayushya's VR Library" position="0 2.5 0" align="center" anchor="center" color="#ECF0F1" scale="1.5 1.5 1.5"></a-text>
+        <a-text value="Click on the books to read articles" position="0 2.2 0" align="center" anchor="center" color="#BDC3C7" scale="0.8 0.8 0.8"></a-text>
 
         <!-- Back to Portfolio Button -->
-        <a-link href="index.html" position="0 2.3 0" scale="0.5 0.5 0.5">
-            <a-plane color="#dc3545" opacity="0.9" width="2" height="0.5">
+        <a-link href="index.html" position="0 2.8 5" scale="0.5 0.5 0.5" rotation ="0 180 0">
+            <a-plane color="#E74C3C" opacity="0.9" width="2" height="0.5">
                 <a-text value="← Back to Portfolio" align="center" anchor="center" color="white" scale="1.2 1.2 1.2"></a-text>
             </a-plane>
         </a-link>
