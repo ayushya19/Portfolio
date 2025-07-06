@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extended Reality (XR) - Ayushya's Blog</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #2C3E50 0%, #34495E 100%);
+            min-height: 100vh;
+            color: #ECF0F1;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            text-align: center;
+            padding: 40px 0;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            margin-bottom: 40px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+        }
+
+        .header h1 {
+            font-size: 3rem;
+            color: #ECF0F1;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .header p {
+            font-size: 1.2rem;
+            color: #BDC3C7;
+        }
+
+        .back-button {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            background: rgba(231, 76, 60, 0.9);
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 25px;
+            backdrop-filter: blur(10px);
+            transition: all 0.3s ease;
+            z-index: 1000;
+        }
+
+        .back-button:hover {
+            background: rgba(231, 76, 60, 1);
+            transform: translateY(-2px);
+        }
+
+        .content {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 15px;
+            padding: 30px;
+            margin-bottom: 30px;
+            backdrop-filter: blur(10px);
+        }
+
+        .content h2 {
+            color: #3498DB;
+            margin-bottom: 20px;
+            font-size: 2rem;
+        }
+
+        .content p {
+            line-height: 1.8;
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+        }
+
+        .content ul {
+            margin-left: 20px;
+            margin-bottom: 20px;
+        }
+
+        .content li {
+            margin-bottom: 10px;
+            line-height: 1.6;
+        }
+
+        .highlight {
+            background: rgba(52, 152, 219, 0.2);
+            padding: 20px;
+            border-radius: 10px;
+            border-left: 4px solid #3498DB;
+            margin: 20px 0;
+        }
+
+        .vr-demo {
+            text-align: center;
+            padding: 40px;
+            background: rgba(52, 152, 219, 0.1);
+            border-radius: 15px;
+            margin: 30px 0;
+        }
+
+        .vr-demo h3 {
+            color: #3498DB;
+            margin-bottom: 20px;
+        }
+
+        .demo-button {
+            display: inline-block;
+            background: linear-gradient(45deg, #3498DB, #2980B9);
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+            font-weight: bold;
+        }
+
+        .demo-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(52, 152, 219, 0.3);
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2rem;
+            }
+            
+            .container {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <a href="blog.html" class="back-button">← Back to Library</a>
+    
+    <div class="container">
+        <div class="header">
+            <h1>Extended Reality (XR)</h1>
+            <p>Exploring the Future of Immersive Technology</p>
+        </div>
+
+        <div class="content">
+            <h2>What is Extended Reality?</h2>
+            <p>Extended Reality (XR) is an umbrella term that encompasses all immersive technologies, including Virtual Reality (VR), Augmented Reality (AR), and Mixed Reality (MR). These technologies blend the physical and digital worlds, creating experiences that were once only possible in science fiction.</p>
+            
+            <div class="highlight">
+                <h3>Key Components of XR:</h3>
+                <ul>
+                    <li><strong>Virtual Reality (VR):</strong> Complete immersion in a digital environment</li>
+                    <li><strong>Augmented Reality (AR):</strong> Digital overlays on the real world</li>
+                    <li><strong>Mixed Reality (MR):</strong> Seamless integration of digital and physical elements</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="content">
+            <h2>Applications of XR Technology</h2>
+            <p>XR is revolutionizing various industries and creating new possibilities for human interaction with technology.</p>
+            
+            <h3>Education & Training</h3>
+            <p>XR enables immersive learning experiences, allowing students to explore historical events, conduct virtual experiments, and practice skills in safe, controlled environments.</p>
+            
+            <h3>Healthcare</h3>
+            <p>Medical professionals use XR for surgical planning, patient education, and therapeutic interventions. VR therapy is proving effective for treating phobias and PTSD.</p>
+            
+            <h3>Entertainment & Gaming</h3>
+            <p>The gaming industry has embraced XR, creating immersive experiences that transport players into fantastical worlds and interactive narratives.</p>
+        </div>
+
+        <div class="content">
+            <h2>Technical Challenges & Solutions</h2>
+            <p>While XR technology has made significant progress, several challenges remain in creating truly seamless experiences.</p>
+            
+            <h3>Latency & Motion Sickness</h3>
+            <p>High latency can cause motion sickness in VR. Modern XR systems use advanced rendering techniques and low-latency displays to minimize these issues.</p>
+            
+            <h3>Hardware Limitations</h3>
+            <p>Current XR devices face limitations in processing power, battery life, and display resolution. Ongoing research focuses on optimizing performance and efficiency.</p>
+        </div>
+
+        <div class="vr-demo">
+            <h3>Experience XR Technology</h3>
+            <p>Ready to explore the world of Extended Reality? Try our interactive XR demonstrations.</p>
+            <a href="#" class="demo-button">Launch XR Demo</a>
+        </div>
+
+        <div class="content">
+            <h2>Future of XR</h2>
+            <p>As technology continues to advance, XR will become more accessible, affordable, and integrated into our daily lives. We're moving toward a future where the boundaries between physical and digital realities blur seamlessly.</p>
+            
+            <h3>Emerging Trends</h3>
+            <ul>
+                <li>Wireless and standalone XR devices</li>
+                <li>Advanced haptic feedback systems</li>
+                <li>Brain-computer interfaces for XR</li>
+                <li>Social XR platforms and virtual workspaces</li>
+                <li>AI-powered content generation for XR</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html> 

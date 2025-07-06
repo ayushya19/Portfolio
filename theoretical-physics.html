@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Theoretical Physics - Ayushya's Blog</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #E67E22 0%, #F39C12 100%);
+            min-height: 100vh;
+            color: #ECF0F1;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            text-align: center;
+            padding: 40px 0;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            margin-bottom: 40px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+        }
+
+        .header h1 {
+            font-size: 3rem;
+            color: #ECF0F1;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .header p {
+            font-size: 1.2rem;
+            color: #BDC3C7;
+        }
+
+        .back-button {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            background: rgba(231, 76, 60, 0.9);
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 25px;
+            backdrop-filter: blur(10px);
+            transition: all 0.3s ease;
+            z-index: 1000;
+        }
+
+        .back-button:hover {
+            background: rgba(231, 76, 60, 1);
+            transform: translateY(-2px);
+        }
+
+        .content {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 15px;
+            padding: 30px;
+            margin-bottom: 30px;
+            backdrop-filter: blur(10px);
+        }
+
+        .content h2 {
+            color: #F39C12;
+            margin-bottom: 20px;
+            font-size: 2rem;
+        }
+
+        .content p {
+            line-height: 1.8;
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+        }
+
+        .content ul {
+            margin-left: 20px;
+            margin-bottom: 20px;
+        }
+
+        .content li {
+            margin-bottom: 10px;
+            line-height: 1.6;
+        }
+
+        .highlight {
+            background: rgba(243, 156, 18, 0.2);
+            padding: 20px;
+            border-radius: 10px;
+            border-left: 4px solid #F39C12;
+            margin: 20px 0;
+        }
+
+        .equation {
+            font-family: 'Courier New', monospace;
+            background: rgba(243, 156, 18, 0.1);
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+            margin: 15px 0;
+            font-size: 1.1rem;
+        }
+
+        .physics-demo {
+            text-align: center;
+            padding: 40px;
+            background: rgba(243, 156, 18, 0.1);
+            border-radius: 15px;
+            margin: 30px 0;
+        }
+
+        .physics-demo h3 {
+            color: #F39C12;
+            margin-bottom: 20px;
+        }
+
+        .demo-button {
+            display: inline-block;
+            background: linear-gradient(45deg, #F39C12, #E67E22);
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+            font-weight: bold;
+        }
+
+        .demo-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(243, 156, 18, 0.3);
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2rem;
+            }
+            
+            .container {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <a href="blog.html" class="back-button">← Back to Library</a>
+    
+    <div class="container">
+        <div class="header">
+            <h1>Theoretical Physics</h1>
+            <p>Exploring the Fundamental Laws of the Universe</p>
+        </div>
+
+        <div class="content">
+            <h2>What is Theoretical Physics?</h2>
+            <p>Theoretical physics seeks to understand the fundamental principles that govern the universe. Through mathematical models and conceptual frameworks, it attempts to explain everything from the behavior of subatomic particles to the evolution of the cosmos.</p>
+            
+            <div class="highlight">
+                <h3>Major Areas of Theoretical Physics:</h3>
+                <ul>
+                    <li><strong>Quantum Mechanics:</strong> Behavior of matter at atomic scales</li>
+                    <li><strong>Relativity:</strong> Space, time, and gravity</li>
+                    <li><strong>Particle Physics:</strong> Fundamental particles and forces</li>
+                    <li><strong>Cosmology:</strong> Origin and evolution of the universe</li>
+                    <li><strong>String Theory:</strong> Unified theory of everything</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="content">
+            <h2>Quantum Mechanics</h2>
+            <p>Quantum mechanics describes the behavior of matter and energy at the smallest scales, where classical physics breaks down.</p>
+            
+            <h3>Wave-Particle Duality</h3>
+            <p>One of the most puzzling aspects of quantum mechanics is that particles can exhibit both wave-like and particle-like behavior depending on how they are observed.</p>
+            
+            <div class="equation">
+                ψ(x,t) = Ae^(i(kx-ωt))
+            </div>
+            
+            <h3>Uncertainty Principle</h3>
+            <p>Heisenberg's uncertainty principle states that we cannot simultaneously know both the position and momentum of a particle with arbitrary precision.</p>
+            
+            <div class="equation">
+                ΔxΔp ≥ ℏ/2
+            </div>
+            
+            <h3>Quantum Entanglement</h3>
+            <p>Quantum entanglement allows particles to be correlated in ways that seem impossible according to classical physics, leading to Einstein's famous "spooky action at a distance."</p>
+        </div>
+
+        <div class="content">
+            <h2>Relativity</h2>
+            <p>Einstein's theories of relativity revolutionized our understanding of space, time, and gravity.</p>
+            
+            <h3>Special Relativity</h3>
+            <p>Special relativity shows that space and time are not absolute but are interconnected in a four-dimensional spacetime fabric.</p>
+            
+            <div class="equation">
+                E = mc²
+            </div>
+            
+            <h3>General Relativity</h3>
+            <p>General relativity describes gravity as the curvature of spacetime caused by mass and energy, rather than a force acting at a distance.</p>
+            
+            <h3>Black Holes</h3>
+            <p>Black holes are regions of spacetime where gravity is so strong that nothing, not even light, can escape. They represent some of the most extreme predictions of general relativity.</p>
+        </div>
+
+        <div class="physics-demo">
+            <h3>Interactive Physics Simulations</h3>
+            <p>Explore quantum mechanics, relativity, and other physical phenomena through interactive simulations.</p>
+            <a href="#" class="demo-button">Launch Physics Demo</a>
+        </div>
+
+        <div class="content">
+            <h2>Particle Physics & Standard Model</h2>
+            <p>The Standard Model of particle physics describes all known fundamental particles and their interactions through three forces: electromagnetism, weak nuclear force, and strong nuclear force.</p>
+            
+            <h3>Fundamental Particles</h3>
+            <ul>
+                <li><strong>Quarks:</strong> Building blocks of protons and neutrons</li>
+                <li><strong>Leptons:</strong> Include electrons and neutrinos</li>
+                <li><strong>Gauge Bosons:</strong> Force-carrying particles</li>
+                <li><strong>Higgs Boson:</strong> Gives mass to other particles</li>
+            </ul>
+            
+            <h3>Grand Unified Theory</h3>
+            <p>Physicists seek to unify the fundamental forces into a single theoretical framework, potentially explaining all physical phenomena.</p>
+        </div>
+
+        <div class="content">
+            <h2>Cosmology & the Universe</h2>
+            <p>Cosmology studies the origin, evolution, and ultimate fate of the universe.</p>
+            
+            <h3>Big Bang Theory</h3>
+            <p>The universe began approximately 13.8 billion years ago from an extremely hot, dense state and has been expanding ever since.</p>
+            
+            <h3>Dark Matter & Dark Energy</h3>
+            <p>Observations suggest that most of the universe's mass-energy is in forms we cannot directly observe: dark matter and dark energy.</p>
+            
+            <h3>Multiverse Theories</h3>
+            <p>Some theoretical frameworks suggest the existence of multiple universes, each with different physical laws and constants.</p>
+        </div>
+
+        <div class="content">
+            <h2>String Theory & Beyond</h2>
+            <p>String theory attempts to unify quantum mechanics and general relativity by describing fundamental particles as tiny vibrating strings.</p>
+            
+            <h3>Extra Dimensions</h3>
+            <p>String theory requires the existence of additional spatial dimensions beyond the three we experience directly.</p>
+            
+            <h3>M-Theory</h3>
+            <p>M-theory is a proposed framework that unifies various string theories and may provide a complete description of fundamental physics.</p>
+            
+            <h3>Future of Theoretical Physics</h3>
+            <ul>
+                <li>Development of quantum computers for complex calculations</li>
+                <li>Experimental verification of string theory predictions</li>
+                <li>Understanding of quantum gravity</li>
+                <li>Resolution of the measurement problem in quantum mechanics</li>
+                <li>Unification of all fundamental forces</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html> 
