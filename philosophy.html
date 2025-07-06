@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Philosophy - Ayushya's Blog</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #8E44AD 0%, #9B59B6 100%);
+            min-height: 100vh;
+            color: #ECF0F1;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            text-align: center;
+            padding: 40px 0;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            margin-bottom: 40px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+        }
+
+        .header h1 {
+            font-size: 3rem;
+            color: #ECF0F1;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .header p {
+            font-size: 1.2rem;
+            color: #BDC3C7;
+        }
+
+        .back-button {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            background: rgba(231, 76, 60, 0.9);
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 25px;
+            backdrop-filter: blur(10px);
+            transition: all 0.3s ease;
+            z-index: 1000;
+        }
+
+        .back-button:hover {
+            background: rgba(231, 76, 60, 1);
+            transform: translateY(-2px);
+        }
+
+        .content {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 15px;
+            padding: 30px;
+            margin-bottom: 30px;
+            backdrop-filter: blur(10px);
+        }
+
+        .content h2 {
+            color: #9B59B6;
+            margin-bottom: 20px;
+            font-size: 2rem;
+        }
+
+        .content p {
+            line-height: 1.8;
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+        }
+
+        .content ul {
+            margin-left: 20px;
+            margin-bottom: 20px;
+        }
+
+        .content li {
+            margin-bottom: 10px;
+            line-height: 1.6;
+        }
+
+        .highlight {
+            background: rgba(155, 89, 182, 0.2);
+            padding: 20px;
+            border-radius: 10px;
+            border-left: 4px solid #9B59B6;
+            margin: 20px 0;
+        }
+
+        .quote {
+            font-style: italic;
+            font-size: 1.2rem;
+            text-align: center;
+            padding: 20px;
+            background: rgba(155, 89, 182, 0.1);
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+
+        .philosophy-demo {
+            text-align: center;
+            padding: 40px;
+            background: rgba(155, 89, 182, 0.1);
+            border-radius: 15px;
+            margin: 30px 0;
+        }
+
+        .philosophy-demo h3 {
+            color: #9B59B6;
+            margin-bottom: 20px;
+        }
+
+        .demo-button {
+            display: inline-block;
+            background: linear-gradient(45deg, #9B59B6, #8E44AD);
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+            font-weight: bold;
+        }
+
+        .demo-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(155, 89, 182, 0.3);
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2rem;
+            }
+            
+            .container {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <a href="blog.html" class="back-button">← Back to Library</a>
+    
+    <div class="container">
+        <div class="header">
+            <h1>Philosophy</h1>
+            <p>Exploring the Fundamental Questions of Existence</p>
+        </div>
+
+        <div class="content">
+            <h2>What is Philosophy?</h2>
+            <p>Philosophy is the study of fundamental questions about existence, knowledge, values, reason, mind, and language. It seeks to understand the nature of reality and our place within it through critical thinking and rational inquiry.</p>
+            
+            <div class="quote">
+                "The unexamined life is not worth living." - Socrates
+            </div>
+            
+            <div class="highlight">
+                <h3>Major Branches of Philosophy:</h3>
+                <ul>
+                    <li><strong>Metaphysics:</strong> Study of the nature of reality and existence</li>
+                    <li><strong>Epistemology:</strong> Theory of knowledge and belief</li>
+                    <li><strong>Ethics:</strong> Study of morality and values</li>
+                    <li><strong>Logic:</strong> Study of valid reasoning and argumentation</li>
+                    <li><strong>Aesthetics:</strong> Philosophy of art and beauty</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="content">
+            <h2>Philosophy of Technology</h2>
+            <p>As technology becomes increasingly integrated into our lives, philosophical inquiry helps us understand its impact on society, ethics, and human nature.</p>
+            
+            <h3>Digital Ethics</h3>
+            <p>Philosophy examines the ethical implications of artificial intelligence, data privacy, and digital surveillance. It asks fundamental questions about rights, responsibilities, and the nature of personhood in the digital age.</p>
+            
+            <h3>Virtual Reality & Consciousness</h3>
+            <p>VR technology raises profound questions about the nature of consciousness, reality, and experience. Philosophical inquiry helps us understand what it means to "be" in a virtual world.</p>
+            
+            <h3>Transhumanism</h3>
+            <p>This philosophical movement explores the possibility of enhancing human capabilities through technology, raising questions about identity, mortality, and what it means to be human.</p>
+        </div>
+
+        <div class="content">
+            <h2>Philosophy of Mind</h2>
+            <p>The study of consciousness and mental phenomena is particularly relevant in our technological age.</p>
+            
+            <h3>Consciousness & AI</h3>
+            <p>As artificial intelligence advances, philosophical questions about consciousness, intentionality, and the possibility of machine consciousness become increasingly important.</p>
+            
+            <h3>Extended Mind Theory</h3>
+            <p>This philosophical position suggests that our minds extend beyond our brains to include external tools and technologies, challenging traditional notions of where the mind ends and the world begins.</p>
+            
+            <h3>Brain-Computer Interfaces</h3>
+            <p>BCI technology raises questions about personal identity, agency, and the relationship between mind and machine.</p>
+        </div>
+
+        <div class="philosophy-demo">
+            <h3>Philosophical Thought Experiments</h3>
+            <p>Explore classic philosophical problems and thought experiments that challenge our understanding of reality and consciousness.</p>
+            <a href="#" class="demo-button">Launch Philosophy Demo</a>
+        </div>
+
+        <div class="content">
+            <h2>Ethics in the Digital Age</h2>
+            <p>Modern technology presents new ethical challenges that require philosophical analysis.</p>
+            
+            <h3>Privacy & Surveillance</h3>
+            <p>Philosophy helps us understand the value of privacy and the ethical implications of mass surveillance in the digital age.</p>
+            
+            <h3>Algorithmic Bias</h3>
+            <p>As algorithms make increasingly important decisions, philosophical inquiry helps us understand fairness, justice, and the nature of bias in automated systems.</p>
+            
+            <h3>Digital Rights</h3>
+            <p>Philosophy explores the nature of rights in digital spaces, including freedom of expression, access to information, and digital property.</p>
+        </div>
+
+        <div class="content">
+            <h2>Future of Philosophical Inquiry</h2>
+            <p>As technology continues to evolve, philosophy will play a crucial role in helping us navigate the complex ethical, metaphysical, and epistemological questions that arise.</p>
+            
+            <h3>Emerging Philosophical Questions</h3>
+            <ul>
+                <li>The nature of consciousness in artificial intelligence</li>
+                <li>Ethics of genetic engineering and human enhancement</li>
+                <li>Philosophy of virtual and augmented reality</li>
+                <li>Digital ontology and the nature of digital objects</li>
+                <li>Philosophy of information and data</li>
+                <li>Existential questions in the age of automation</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html> 

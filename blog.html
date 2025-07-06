@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayushya's VR Blog Environment</title>
+    <script src="https://aframe.io/releases/1.4.2/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-look-at-component@0.8.0/dist/aframe-look-at-component.min.js"></script>
+    <script src="https://unpkg.com/aframe-hover-component@0.1.0/dist/aframe-hover-component.min.js"></script>
+    <script>
+        AFRAME.registerComponent('clickable', {
+            init: function () {
+                this.el.addEventListener('click', function () {
+                    const href = this.getAttribute('data-href');
+                    if (href) {
+                        window.location.href = href;
+                    }
+                });
+            }
+        });
+    </script>
+</head>
+<body>
+    <a-scene background="color: #f0f0f0">
+        <a-asset>
+            <!-- 360 Image Background - Replace with your 360 image URL -->
+            <img id="background360" src="https://cdn.glitch.global/0087ca9e-c67e-4888-af53-f96f2c447351/746cbb52-ff9e-41f5-aa82-d2061e9e7820.png?v=1751766110362" crossorigin="anonymous"/>
+            
+            <!-- Alternative: If you want animated background, use a 360 video -->
+            <!-- <video id="background360video" src="YOUR_360_VIDEO_URL.mp4" autoplay loop="true" crossorigin="anonymous"></video> -->
+            
+            <!-- Blog Subject Images -->
+            <img id="metahuman" src="https://cdn.glitch.global/0087ca9e-c67e-4888-af53-f96f2c447351/Metahuman.jfif?v=1689429679423" crossorigin="anonymous"/>
+            <img id="sports" src="https://cdn.glitch.global/0087ca9e-c67e-4888-af53-f96f2c447351/SportsRecreation.jfif?v=1689429683896" crossorigin="anonymous"/>
+            <img id="vr-training" src="https://cdn.glitch.global/0087ca9e-c67e-4888-af53-f96f2c447351/_51661375-f585-477e-964f-5dca2d0b1e92.jfif?v=1689429674741" crossorigin="anonymous"/>
+            <img id="vr-bank" src="https://cdn.glitch.global/0087ca9e-c67e-4888-af53-f96f2c447351/_2cd68430-b059-4bb3-a5bb-ade66e21703d.jfif?v=1689429672758" crossorigin="anonymous"/>
+            <img id="webvr" src="https://cdn.glitch.global/0087ca9e-c67e-4888-af53-f96f2c447351/171197_A%20robot%20interacting%20with%20a%20device%20whose%20display%20is_esrgan-v1-x2plus.png?v=1689429678394" crossorigin="anonymous"/>
+            <img id="ai-vr" src="https://cdn.glitch.global/0087ca9e-c67e-4888-af53-f96f2c447351/PersonalLogoPic.jpg?v=1751762371257" crossorigin="anonymous"/>
+        </a-asset>
+
+        <!-- 360 Image Background (Static) -->
+        <a-sky src="#background360"></a-sky>
+        
+        <!-- Alternative: 360 Video Background (Animated) - Uncomment if you have a 360 video -->
+        <!-- <a-videosphere src="#background360video"></a-videosphere> -->
+
+        <!-- Book 1: XR -->
+        <a-box position="-3 1 0" width="0.3" height="0.8" depth="0.5" color="#2C3E50" material="roughness: 0.8; metalness: 0.1" 
+               class="clickable" data-href="xr.html" cursor="rayOrigin: mouse">
+            <a-text value="XR" align="center" anchor="center" position="0 0 0.26" color="#ECF0F1" scale="0.4 0.4 0.4"></a-text>
+        </a-box>
+        <a-text value="Extended Reality" position="-3 1 0" align="center" anchor="center" color="#ECF0F1" scale="0.6 0.6 0.6"></a-text>
+
+        <!-- Book 2: BCI -->
+        <a-box position="-1.5 0.5 2.6" width="0.3" height="0.8" depth="0.5" color="#27AE60" material="roughness: 0.8; metalness: 0.1" 
+               class="clickable" data-href="bci.html" cursor="rayOrigin: mouse">
+            <a-text value="BCI" align="center" anchor="center" position="0 0 0.26" color="#ECF0F1" scale="0.4 0.4 0.4"></a-text>
+        </a-box>
+        <a-text value="Brain-Computer Interface" position="-1.5 1.5 2.6" align="center" anchor="center" color="#ECF0F1" scale="0.5 0.5 0.5"></a-text>
+
+        <!-- Book 3: Philosophy -->
+        <a-box position="1.5 0.5 2.6" width="0.3" height="0.8" depth="0.5" color="#8E44AD" material="roughness: 0.8; metalness: 0.1" 
+               class="clickable" data-href="philosophy.html" cursor="rayOrigin: mouse">
+            <a-text value="Philosophy" align="center" anchor="center" position="0 0 0.26" color="#ECF0F1" scale="0.3 0.3 0.3"></a-text>
+        </a-box>
+        <a-text value="Philosophical Concepts" position="1.5 1 2.6" align="center" anchor="center" color="#ECF0F1" scale="0.5 0.5 0.5"></a-text>
+
+        <!-- Book 4: Theoretical Physics -->
+        <a-box position="3 0.5 0" width="0.3" height="0.8" depth="0.5" color="#E67E22" material="roughness: 0.8; metalness: 0.1" 
+               class="clickable" data-href="theoretical-physics.html" cursor="rayOrigin: mouse">
+            <a-text value="Theoretical Physics" align="center" anchor="center" position="0 0 0.26" color="#ECF0F1" scale="0.25 0.25 0.25"></a-text>
+        </a-box>
+        <a-text value="Physics Theories" position="3 1.5 0" align="center" anchor="center" color="#ECF0F1" scale="0.6 0.6 0.6"></a-text>
+
+        <!-- Book 5: Chemistry -->
+        <a-box position="0 0.5 -3" width="0.3" height="0.8" depth="0.5" color="#2980B9" material="roughness: 0.8; metalness: 0.1" 
+               class="clickable" data-href="chemistry.html" cursor="rayOrigin: mouse">
+            <a-text value="Chemistry" align="center" anchor="center" position="0 0 0.26" color="#ECF0F1" scale="0.35 0.35 0.35"></a-text>
+        </a-box>
+        <a-text value="Chemical Sciences" position="0 1 -3" align="center" anchor="center" color="#ECF0F1" scale="0.6 0.6 0.6"></a-text>
+
+        <!-- Welcome Sign -->
+        <a-text value="Ayushya's VR Library" position="0 2.5 0" align="center" anchor="center" color="#ECF0F1" scale="1.5 1.5 1.5"></a-text>
+        <a-text value="Click on the books to read articles" position="0 2.2 0" align="center" anchor="center" color="#BDC3C7" scale="0.8 0.8 0.8"></a-text>
+
+        <!-- Back to Portfolio Button -->
+        <a-plane position="0 2.8 5" color="#E74C3C" opacity="0.9" width="2" height="0.5" rotation="0 180 0" 
+                 class="clickable" data-href="index.html" cursor="rayOrigin: mouse">
+            <a-text value="← Back to Portfolio" align="center" anchor="center" color="white" scale="1.2 1.2 1.2"></a-text>
+        </a-plane>
+
+        <!-- Lighting -->
+        <a-light type="ambient" color="#ffffff" intensity="0.6"></a-light>
+        <a-light type="directional" position="0 5 5" color="#ffffff" intensity="0.8"></a-light>
+
+        <!-- Camera -->
+        <a-camera id="cam" position="0 1.6 3" look-controls="reverseMouseDrag: true">
+            <a-cursor color="#FFFFFF"></a-cursor>
+        </a-camera>
+    </a-scene>
+</body>
+</html> 

@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chemistry - Ayushya's Blog</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #2980B9 0%, #3498DB 100%);
+            min-height: 100vh;
+            color: #ECF0F1;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            text-align: center;
+            padding: 40px 0;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            margin-bottom: 40px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+        }
+
+        .header h1 {
+            font-size: 3rem;
+            color: #ECF0F1;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .header p {
+            font-size: 1.2rem;
+            color: #BDC3C7;
+        }
+
+        .back-button {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            background: rgba(231, 76, 60, 0.9);
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 25px;
+            backdrop-filter: blur(10px);
+            transition: all 0.3s ease;
+            z-index: 1000;
+        }
+
+        .back-button:hover {
+            background: rgba(231, 76, 60, 1);
+            transform: translateY(-2px);
+        }
+
+        .content {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 15px;
+            padding: 30px;
+            margin-bottom: 30px;
+            backdrop-filter: blur(10px);
+        }
+
+        .content h2 {
+            color: #3498DB;
+            margin-bottom: 20px;
+            font-size: 2rem;
+        }
+
+        .content p {
+            line-height: 1.8;
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+        }
+
+        .content ul {
+            margin-left: 20px;
+            margin-bottom: 20px;
+        }
+
+        .content li {
+            margin-bottom: 10px;
+            line-height: 1.6;
+        }
+
+        .highlight {
+            background: rgba(52, 152, 219, 0.2);
+            padding: 20px;
+            border-radius: 10px;
+            border-left: 4px solid #3498DB;
+            margin: 20px 0;
+        }
+
+        .formula {
+            font-family: 'Courier New', monospace;
+            background: rgba(52, 152, 219, 0.1);
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+            margin: 15px 0;
+            font-size: 1.1rem;
+        }
+
+        .chemistry-demo {
+            text-align: center;
+            padding: 40px;
+            background: rgba(52, 152, 219, 0.1);
+            border-radius: 15px;
+            margin: 30px 0;
+        }
+
+        .chemistry-demo h3 {
+            color: #3498DB;
+            margin-bottom: 20px;
+        }
+
+        .demo-button {
+            display: inline-block;
+            background: linear-gradient(45deg, #3498DB, #2980B9);
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+            font-weight: bold;
+        }
+
+        .demo-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(52, 152, 219, 0.3);
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2rem;
+            }
+            
+            .container {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <a href="blog.html" class="back-button">← Back to Library</a>
+    
+    <div class="container">
+        <div class="header">
+            <h1>Chemistry</h1>
+            <p>The Science of Matter and Its Transformations</p>
+        </div>
+
+        <div class="content">
+            <h2>What is Chemistry?</h2>
+            <p>Chemistry is the scientific study of matter, its properties, composition, structure, and the changes it undergoes during chemical reactions. It bridges the gap between physics and biology, explaining how atoms and molecules interact to form the complex systems we observe in nature.</p>
+            
+            <div class="highlight">
+                <h3>Major Branches of Chemistry:</h3>
+                <ul>
+                    <li><strong>Organic Chemistry:</strong> Study of carbon-based compounds</li>
+                    <li><strong>Inorganic Chemistry:</strong> Study of non-carbon compounds</li>
+                    <li><strong>Physical Chemistry:</strong> Application of physics to chemical systems</li>
+                    <li><strong>Biochemistry:</strong> Chemistry of living organisms</li>
+                    <li><strong>Analytical Chemistry:</strong> Identification and measurement of substances</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="content">
+            <h2>Atomic Structure & Bonding</h2>
+            <p>Understanding the structure of atoms and how they bond is fundamental to chemistry.</p>
+            
+            <h3>Atomic Models</h3>
+            <p>From Dalton's atomic theory to quantum mechanical models, our understanding of atomic structure has evolved dramatically, revealing the complex behavior of electrons in atoms.</p>
+            
+            <h3>Chemical Bonding</h3>
+            <p>Atoms combine through various types of bonds to form molecules and compounds:</p>
+            <ul>
+                <li><strong>Covalent Bonds:</strong> Sharing of electron pairs</li>
+                <li><strong>Ionic Bonds:</strong> Transfer of electrons between atoms</li>
+                <li><strong>Metallic Bonds:</strong> Delocalized electrons in metals</li>
+                <li><strong>Hydrogen Bonds:</strong> Special dipole-dipole interactions</li>
+            </ul>
+            
+            <div class="formula">
+                H₂O + CO₂ → H₂CO₃
+            </div>
+        </div>
+
+        <div class="content">
+            <h2>Chemical Reactions & Kinetics</h2>
+            <p>Chemical reactions are the heart of chemistry, transforming reactants into products through various mechanisms.</p>
+            
+            <h3>Types of Reactions</h3>
+            <ul>
+                <li><strong>Synthesis:</strong> A + B → AB</li>
+                <li><strong>Decomposition:</strong> AB → A + B</li>
+                <li><strong>Single Replacement:</strong> A + BC → AC + B</li>
+                <li><strong>Double Replacement:</strong> AB + CD → AD + CB</li>
+                <li><strong>Combustion:</strong> Fuel + O₂ → CO₂ + H₂O</li>
+            </ul>
+            
+            <h3>Reaction Kinetics</h3>
+            <p>The study of reaction rates and mechanisms helps us understand how fast reactions occur and what factors influence their speed.</p>
+            
+            <div class="formula">
+                Rate = k[A]ᵃ[B]ᵇ
+            </div>
+        </div>
+
+        <div class="chemistry-demo">
+            <h3>Interactive Chemistry Simulations</h3>
+            <p>Explore molecular structures, chemical reactions, and laboratory techniques through interactive demonstrations.</p>
+            <a href="#" class="demo-button">Launch Chemistry Demo</a>
+        </div>
+
+        <div class="content">
+            <h2>Thermodynamics & Energy</h2>
+            <p>Thermodynamics governs the energy changes that occur during chemical processes.</p>
+            
+            <h3>Laws of Thermodynamics</h3>
+            <ul>
+                <li><strong>First Law:</strong> Energy cannot be created or destroyed</li>
+                <li><strong>Second Law:</strong> Entropy of the universe increases</li>
+                <li><strong>Third Law:</strong> Entropy approaches zero at absolute zero</li>
+            </ul>
+            
+            <h3>Enthalpy & Entropy</h3>
+            <p>These thermodynamic properties help predict whether reactions will occur spontaneously and how much energy they will release or absorb.</p>
+            
+            <div class="formula">
+                ΔG = ΔH - TΔS
+            </div>
+        </div>
+
+        <div class="content">
+            <h2>Modern Chemistry Applications</h2>
+            <p>Chemistry plays a crucial role in addressing modern challenges and developing new technologies.</p>
+            
+            <h3>Materials Science</h3>
+            <p>Development of new materials with specific properties for applications in electronics, medicine, and energy storage.</p>
+            
+            <h3>Green Chemistry</h3>
+            <p>Design of chemical processes that minimize environmental impact and reduce waste generation.</p>
+            
+            <h3>Pharmaceutical Chemistry</h3>
+            <p>Design and synthesis of new drugs and therapeutic agents to treat diseases.</p>
+            
+            <h3>Nanotechnology</h3>
+            <p>Manipulation of matter at the atomic and molecular scale for novel applications.</p>
+        </div>
+
+        <div class="content">
+            <h2>Chemistry in Everyday Life</h2>
+            <p>Chemistry is everywhere around us, from the food we eat to the materials we use.</p>
+            
+            <h3>Household Chemistry</h3>
+            <ul>
+                <li>Cleaning products and detergents</li>
+                <li>Cooking and food chemistry</li>
+                <li>Personal care products</li>
+                <li>Medicines and supplements</li>
+            </ul>
+            
+            <h3>Environmental Chemistry</h3>
+            <p>Understanding chemical processes in the environment, including pollution, climate change, and atmospheric chemistry.</p>
+            
+            <h3>Industrial Chemistry</h3>
+            <p>Large-scale chemical processes for manufacturing products like plastics, fuels, and fertilizers.</p>
+        </div>
+
+        <div class="content">
+            <h2>Future of Chemistry</h2>
+            <p>Chemistry continues to evolve with new technologies and challenges.</p>
+            
+            <h3>Emerging Fields</h3>
+            <ul>
+                <li>Computational chemistry and molecular modeling</li>
+                <li>Supramolecular chemistry and self-assembly</li>
+                <li>Chemical biology and bioorthogonal chemistry</li>
+                <li>Electrochemistry and energy storage</li>
+                <li>Chemical sensors and diagnostics</li>
+                <li>Sustainable chemistry and circular economy</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html> 
