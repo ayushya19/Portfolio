@@ -54,6 +54,13 @@
           alt="Blogs"
           crossorigin="anonymous"
         />
+        
+        <img
+          id="Resume"
+          src="https://cdn.glitch.global/0087ca9e-c67e-4888-af53-f96f2c447351/CV-or-Resume-Icon-Graphics-13336606-1.jpg?v=1751769728158"
+          alt="Blogs"
+          crossorigin="anonymous"
+        />
       </a-asset>
 
       <a-entity
@@ -70,6 +77,22 @@
             position="0 0.6 0.1"
           />
           <a-image src="#Project1"></a-image>
+        </a-entity>
+        
+         <a-entity
+        layout="type: circle; radius: 2"
+        position="0 1.4 0"
+        rotation="120 0 0"
+      >
+        <a-entity look-at="#cam" position="0 0 -2">
+          <a-text
+            value="Speaking Metahuman"
+            align="center"
+            baseline="bottom"
+            anchor="center"
+            position="0 0.6 0.1"
+          />
+          <a-image src="#Resume"></a-image>
         </a-entity>
 
         <a-entity look-at="#cam" position="0 0 -4">
