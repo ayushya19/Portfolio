@@ -12,26 +12,22 @@
             init: function () {
                 const self = this;
                 
-                // Handle click events
-                this.el.addEventListener('click', function () {
-                    console.log('Click detected!');
+                // Handle click events with multiple event types
+                const handleClick = function () {
+                    console.log('Click detected on:', this.getAttribute('data-href'));
                     const href = this.getAttribute('data-href');
-                    console.log('Href:', href);
                     if (href) {
                         console.log('Navigating to:', href);
-                        window.location.href = href;
+                        setTimeout(() => {
+                            window.location.href = href;
+                        }, 100);
                     }
-                });
+                };
                 
-                // Handle mouse down events as backup
-                this.el.addEventListener('mousedown', function () {
-                    console.log('Mouse down detected!');
-                    const href = this.getAttribute('data-href');
-                    if (href) {
-                        console.log('Navigating to:', href);
-                        window.location.href = href;
-                    }
-                });
+                // Add multiple event listeners for better compatibility
+                this.el.addEventListener('click', handleClick);
+                this.el.addEventListener('mousedown', handleClick);
+                this.el.addEventListener('mouseup', handleClick);
                 
                 // Add hover effects
                 this.el.addEventListener('mouseenter', function () {
