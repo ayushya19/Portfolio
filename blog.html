@@ -10,9 +10,25 @@
     <script>
         AFRAME.registerComponent('clickable', {
             init: function () {
+                const self = this;
+                
+                // Handle click events
                 this.el.addEventListener('click', function () {
+                    console.log('Click detected!');
+                    const href = this.getAttribute('data-href');
+                    console.log('Href:', href);
+                    if (href) {
+                        console.log('Navigating to:', href);
+                        window.location.href = href;
+                    }
+                });
+                
+                // Handle mouse down events as backup
+                this.el.addEventListener('mousedown', function () {
+                    console.log('Mouse down detected!');
                     const href = this.getAttribute('data-href');
                     if (href) {
+                        console.log('Navigating to:', href);
                         window.location.href = href;
                     }
                 });
@@ -59,7 +75,7 @@
 
         <!-- Book 1: XR -->
         <a-box position="-3 1 0" width="0.2" height="0.6" depth="0.4" color="#2C3E50" material="roughness: 0.8; metalness: 0.1" 
-               clickable data-href="xr.html" data-color="#2C3E50" cursor="rayOrigin: mouse">
+               clickable data-href="xr.html" data-color="#2C3E50" cursor="rayOrigin: mouse" raycaster="objects: .clickable">
             <a-text value="XR" align="center" anchor="center" position="0 0 0.21" color="#ECF0F1" scale="0.3 0.3 0.3"></a-text>
         </a-box>
         <a-text value="Extended Reality" position="-3 1 0" align="center" anchor="center" color="#ECF0F1" scale="0.4 0.4 0.4"></a-text>
@@ -108,7 +124,7 @@
 
         <!-- Camera -->
         <a-camera id="cam" position="0 1.6 3" look-controls="reverseMouseDrag: true">
-            <a-cursor color="#FFFFFF"></a-cursor>
+            <a-cursor color="#FFFFFF" raycaster="objects: [clickable]"></a-cursor>
         </a-camera>
     </a-scene>
 </body>
