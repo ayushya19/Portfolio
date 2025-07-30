@@ -92,7 +92,7 @@
             anchor="center"
             position="0 0.6 0.1"
           />
-          <a-image src="#Resume"></a-image>
+          <a-image src="#Resume" id="resume-link"></a-image>
         </a-entity>
 
         <a-entity look-at="#cam" position="0 0 -4">
@@ -137,7 +137,7 @@
             position="0 0.6 0.1"
             color="black"
           />
-          <a-image src="#Logo"></a-image>
+          <a-image src="#Logo" id="blogs-link"></a-image>
         </a-entity>
 
         <a-entity look-at="#cam" position="0 0 -3">
@@ -153,7 +153,17 @@
         </a-entity>
       </a-entity>
       <a-sky src="#sky"></a-sky>
-      <a-camera id="cam"></a-camera>
+      <a-camera id="cam">
+        <a-cursor color="black"></a-cursor>
+      </a-camera>
     </a-scene>
+    <script>
+      document.querySelector('#blogs-link').addEventListener('click', function () {
+        window.location.href = 'blog.html';
+      });
+      document.querySelector('#resume-link').addEventListener('click', function () {
+        window.location.href = 'resume.pdf';
+      });
+    </script>
   </body>
 </html>
