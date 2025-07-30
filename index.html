@@ -63,97 +63,38 @@
         />
       </a-asset>
 
-      <a-entity
-        layout="type: circle; radius: 2"
-        position="0 1.4 0"
-        rotation="120 0 0"
-      >
-        <a-entity look-at="#cam" position="0 0 -2">
-          <a-text
-            value="Speaking Metahuman"
-            align="center"
-            baseline="bottom"
-            anchor="center"
-            position="0 0.6 0.1"
-          />
-          <a-image src="#Project1"></a-image>
-        </a-entity>
-        
-         <a-entity
-        layout="type: circle; radius: 2"
-        position="0 1.4 0"
-        rotation="120 0 0"
-      >
-        <a-entity look-at="#cam" position="0 0 -2">
-          <a-text
-            value="Speaking Metahuman"
-            align="center"
-            baseline="bottom"
-            anchor="center"
-            position="0 0.6 0.1"
-          />
-          <a-image src="#Resume" id="resume-link"></a-image>
-        </a-entity>
-
-        <a-entity look-at="#cam" position="0 0 -4">
-          <a-text
-            value="Sports Recreation"
-            align="center"
-            baseline="bottom"
-            anchor="center"
-            position="-5 0 0"
-          />
-          <a-image src="#Project2"></a-image>
-        </a-entity>
-
-        <a-entity look-at="#cam" position="0 0 -6">
-          <a-text
-            value="VR Substation Training"
-            align="center"
-            baseline="bottom"
-            anchor="center"
-            position="0 0 0.1"
-          />
-          <a-image src="#Project3"></a-image>
-        </a-entity>
-
-        <a-entity look-at="#cam" position="0 0 -8">
-          <a-text
-            value="VR Bank"
-            align="center"
-            baseline="bottom"
-            anchor="center"
-            position="0 0.6 0.1"
-          />
-          <a-image src="#Project4"></a-image>
-        </a-entity>
-
-        <a-entity look-at="#cam" position="0 0 -5">
-          <a-text
-            value="Blogs"
-            align="center"
-            baseline="bottom"
-            anchor="center"
-            position="0 0.6 0.1"
-            color="black"
-          />
+      <a-entity layout="type: circle; radius: 2" position="0 1.4 0">
+        <a-entity>
+          <a-text value="Blogs" align="center" baseline="bottom" anchor="center" position="0 0.6 0.1" color="black"></a-text>
           <a-image src="#Logo" id="blogs-link"></a-image>
         </a-entity>
-
-        <a-entity look-at="#cam" position="0 0 -3">
-          <a-text
-            value="Logo"
-            align="center"
-            baseline="bottom"
-            anchor="center"
-            position="0 0.6 0.1"
-            color="black"
-          />
+        <a-entity>
+          <a-text value="Resume" align="center" baseline="bottom" anchor="center" position="0 0.6 0.1"></a-text>
+          <a-image src="#Resume" id="resume-link"></a-image>
+        </a-entity>
+        <a-entity>
+          <a-text value="Speaking Metahuman" align="center" baseline="bottom" anchor="center" position="0 0.6 0.1"></a-text>
+          <a-image src="#Project1"></a-image>
+        </a-entity>
+        <a-entity>
+          <a-text value="Sports Recreation" align="center" baseline="bottom" anchor="center" position="0 0.6 0.1"></a-text>
+          <a-image src="#Project2"></a-image>
+        </a-entity>
+        <a-entity>
+          <a-text value="VR Substation Training" align="center" baseline="bottom" anchor="center" position="0 0.6 0.1"></a-text>
+          <a-image src="#Project3"></a-image>
+        </a-entity>
+        <a-entity>
+          <a-text value="VR Bank" align="center" baseline="bottom" anchor="center" position="0 0.6 0.1"></a-text>
+          <a-image src="#Project4"></a-image>
+        </a-entity>
+        <a-entity>
+          <a-text value="Logo" align="center" baseline="bottom" anchor="center" position="0 0.6 0.1" color="black"></a-text>
           <a-image src="#Blogs"></a-image>
         </a-entity>
       </a-entity>
       <a-sky src="#sky"></a-sky>
-      <a-camera id="cam">
+      <a-camera id="cam" position="0 1.4 0">
         <a-cursor color="black"></a-cursor>
       </a-camera>
     </a-scene>
