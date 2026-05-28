@@ -11,6 +11,12 @@ const sections = [
   { key: 'learning', title: 'Key learning', icon: Lightbulb },
 ] as const;
 
+export function generateStaticParams() {
+  return portfolioData.projects.map((project) => ({
+    id: project.id,
+  }));
+}
+
 export default async function ProjectPage(props: { params: Promise<{ id: string }> }) {
   const { id } = await props.params;
   const project = portfolioData.projects.find((p) => p.id === id);
