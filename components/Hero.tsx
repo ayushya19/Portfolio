@@ -47,7 +47,7 @@ export default function Hero() {
         <div className="grid gap-4 lg:grid-cols-[0.92fr_0.62fr] lg:items-stretch">
           <div className="relative min-h-[560px] overflow-hidden rounded-[2rem] border border-black/15 bg-white shadow-2xl shadow-black/10">
             <Image
-              src="/assets/portfolio/ayushya-rao.jpg"
+              src="assets/portfolio/ayushya-rao.jpg"
               alt="Portrait of Ayushya Rao"
               fill
               priority
@@ -59,7 +59,7 @@ export default function Hero() {
           <div className="grid gap-4">
             <div className="overflow-hidden rounded-2xl border border-black/15 bg-[#161616] p-2 shadow-xl shadow-black/10">
               <Image
-                src="/assets/portfolio/motion-capture-suit.png"
+                src="assets/portfolio/motion-capture-suit.png"
                 alt="Motion capture suit project preview"
                 width={620}
                 height={420}
@@ -70,7 +70,7 @@ export default function Hero() {
 
             <div className="overflow-hidden rounded-2xl border border-black/15 bg-white p-2 shadow-xl shadow-black/10">
               <Image
-                src="/assets/portfolio/live-quantum-circuit.png"
+                src="assets/portfolio/live-quantum-circuit.png"
                 alt="Live quantum circuit project preview"
                 width={660}
                 height={430}
