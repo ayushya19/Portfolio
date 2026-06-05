@@ -9,8 +9,10 @@ const nextConfig = {
   reactStrictMode: true,
   output: 'export',
   trailingSlash: true,
-  basePath: githubPagesBasePath || undefined,
-  assetPrefix: githubPagesBasePath || undefined,
+  output: 'export', // If you are deploying a static site to GitHub Pages
+  images: {
+    unoptimized: true, // Usually required for GH Pages static exports
+  },
   images: {
     unoptimized: true,
     formats: ['image/avif', 'image/webp'],
@@ -22,5 +24,5 @@ const nextConfig = {
     ],
   },
 };
-
+module.exports = nextConfig;
 export default nextConfig;
